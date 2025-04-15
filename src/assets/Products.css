@@ -1,0 +1,46 @@
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    gap: 15px;
+}
+.products > div {
+    aspect-ratio: 1;
+}
+@media (max-width: 1008px) {
+    .products > div {
+        max-width: 380px;
+    }
+}
+/* Ensure one card per row on small screens
+@media (max-width: 910px) {
+    .products > div {
+        width: 40%;
+    }
+} */
+@media (max-width: 768px) {
+    .products > div {
+        width: 300px;
+    }
+}
+@media (max-width: 760px) {
+    .products > div {
+        width: 48.5%;
+    }
+}
+@media (max-width: 584px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .products > div {
+        width: 80%;
+    }
+}
+@media (max-width: 300px) {
+    .products > div {
+        width: 90%;
+    }
+}

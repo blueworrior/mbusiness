@@ -1,0 +1,110 @@
+.prod {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #f5f0fa;
+    padding-bottom: 50px;
+}
+
+.prod h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;  /* Slightly larger for better readability */
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.prod h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+    margin-top: 20px;  /* Slightly more spacing for clarity */
+    text-align: center;
+    line-height: 1.5;
+    max-width: 80%; /* Prevents text from stretching too wide */
+    margin-bottom: 50px;
+}
+.prod h2{
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+}
+#contactbtn{
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+#ctbtn{
+    width: 130px;
+    font: 1rem sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    background: transparent;
+    border: 2px solid #222;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#contactbtn:hover{
+    background-color: #6E5C81;
+    color: #fff;
+}
+@media (max-width: 1000px) {
+    .prod h1{
+        font-size: 1.45rem;
+    }
+    .prod h3{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .prod h1{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .prod h3{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 600px) {
+    .prod h1{
+        font-size: .9rem;
+    }
+    .prod h3{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 500px) {
+    .prod h1{
+        font-size: .9rem;
+    }
+    .prod h3{
+        font-size: .81rem;
+    }
+    .prod h2{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 400px) {
+    
+}
+@media (max-width: 150px) {
+    #contactbtn button {
+        background-color: aqua;
+        font-size: .2rem;
+        padding: 2px;
+        width: 30px;
+    }
+    
+}

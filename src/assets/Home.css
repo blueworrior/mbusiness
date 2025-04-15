@@ -1,0 +1,308 @@
+.homeBc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #6F8EA3; */
+}
+.homeData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f0fa;
+    max-width: 90%;
+    margin-bottom: 50px;
+    color: #222;
+    transition: all .5s;
+}
+.head{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.date {
+    color: #888;
+    font-size: 1rem;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    padding:20px;
+    width: 95%;
+    margin-bottom: 15px;
+    
+}
+
+.date::before,
+.date::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    border-radius: 2px;
+    max-width: 120px;
+    background-color: #888;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.head h2{
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin-top: 40px;
+    margin-bottom: 0;
+    /* color: #b19cd7; */
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: sans-serif; */
+}
+.head p{
+    font-size: 1.2rem;
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #555;
+    font-family: serif;
+    margin-top: 30px;
+    text-align: center;
+}
+.shopConsult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.shopConsult h4{
+    text-align: center;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.shopConsult span{
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.homeProd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    width: 95%;
+}
+.homeProd h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 90%;
+}
+.homeProd h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.divider {
+    width: 40%;
+    height: 1px;
+    background-color: #888;
+    margin: 80px;
+}
+.homeAbout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+.imgData{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgData img{
+    border-radius: 5px;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 10/7;
+}
+.homeAbout p{
+    font-style: italic;
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    width: 70%;
+}
+.homeAbout button{
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    font: 1rem sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    background: transparent;
+    border: 2px solid #222;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.homeAbout button:hover{
+    background-color: #6E5C81;
+    color: #ffff;
+    
+}
+
+
+
+@media (max-width: 1000px) {
+    .head p{
+        width: 80%;
+    }
+    .homeProd h1{
+        font-size: .98rem;
+    }
+    .homeProd h3{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px) {
+    .head p{
+        font-size: .9rem;
+        max-width: 95%;
+    }
+    .homeProd h1{
+        letter-spacing: 1px;
+        width: 90%;
+        font-size: 1rem;
+    }
+    .date{
+        width: 90%;
+    }
+    .homeProd h3{
+        width: 80%;
+        font-size: .9rem;
+    }
+    .homeAbout p{
+        font-size: .8rem;
+    }
+    .shopConsult h4{
+        text-align: center;
+        margin-top: 50px;
+        text-align: left;
+        font-size: .9rem;
+    }
+    .shopConsult span{
+        width: 95%;
+        font-size: .9rem;
+    }
+}
+@media (max-width: 550px) {
+    .homeAbout p{
+        width: 80%;
+        font-size: .77rem;
+    }
+}
+@media (max-width: 450px) {
+    .homeProd h1{
+        width: 80%;
+        font-size: .7rem;
+        margin-bottom: 10px;
+    }
+    .homeProd h3{
+        width: 80%;
+        font-size: .52rem;
+    }
+    .date{
+        font-size: .7rem;
+    }
+    .date::before,
+    .date::after {
+        height: .5px;
+        max-width: 75px;
+        background-color: #888;
+    }
+    .shopConsult h4{
+        text-align: center;
+        margin-top: 50px;
+        text-align: left;
+        font-size: .8rem;
+    }
+    .shopConsult span{
+        font-size: .8rem;
+    }
+    .date{
+        width: 85%;
+    }
+}
+@media (max-width: 372px) {
+    .head h2{
+        font-size: 1.2rem;
+    }
+    .head p{
+        font-size: .8rem;
+    }
+    .shopConsult h4{
+        font-size: .7rem;
+    }
+    .homeAbout p{
+        font-size: .7rem;
+    }
+}
+@media (max-width: 325.5px) {
+    .shopConsult h4{
+        font-size: .65rem;
+    }
+
+}
+@media (max-width: 150px) {
+    .shopConsult h4{
+        font-size: .6rem;
+    }
+    .homeAbout button{
+        font-size: .6rem;
+        width: 80%;
+    }
+    .date{
+        width: 70%;
+        padding: 10px;
+        font-size: .6rem;
+    }
+}
+@media (max-width: 200px) {
+    .date{
+        font-size: .4rem;
+        padding: 5px;
+        width: 65%;
+    }
+}

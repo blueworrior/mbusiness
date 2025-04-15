@@ -1,0 +1,98 @@
+.card{
+    width: 320px;
+    /* border-radius: 5px; */
+    box-shadow: 0 0 4px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    aspect-ratio: 1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#cardtitle{
+    margin: 30px;
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 900;
+    width: 100%;
+}
+.card img{
+    width: 90%;
+    aspect-ratio: 1;
+    border-radius: 2px;
+    height: auto;
+}
+#buybtn{
+    margin: 30px;
+}
+.card button{
+    display: block;
+    padding: 10px;
+    width: 120px;
+    font: 1rem sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    background: transparent;
+    border: 2px solid #222;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.card button:hover{
+    background: #6E5C81;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #cardtitle{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 584px) {
+    #cardtitle{
+        font-size: 1rem;
+    }
+    .card button{
+        padding: 8%;
+        width: 100px;
+        font-size: .8rem;
+    }
+    .card img{
+        width: 65%;
+    }
+}
+@media (max-width: 500px) {
+    .card{
+        padding: 0;
+    }
+    #cardtitle{
+        font-size: 1rem;
+    }
+    .card img{
+        width: 70%;
+    }
+    .card button{
+        padding: 8%;
+        width: 100px;
+        font-size: .8rem;
+    }
+}
+@media (max-width: 400px) {
+    
+}
+@media (max-width: 300px) {
+    #cardtitle{
+        font-size: .9rem;
+        font-weight: 600;
+    }
+}
+@media (max-width: 200px) {
+    .card button{
+        font-size: .6rem;
+        width: 120%;
+    }
+}

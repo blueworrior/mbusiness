@@ -1,0 +1,277 @@
+.bc.animate h1,
+.bc.animate p, .bc.animate button {
+    animation: fadeInUp 0.7s ease-out forwards;
+}
+@keyframes fadeInUp {
+    from {
+        transform:translateY(80px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dbbar{
+    height: 25px;
+    width: 50px;
+    top: 20px;
+    right:20px;
+    background-color: #f5f0fa;
+    position: absolute;
+    border-radius: 100px;
+}
+.dbcircle{
+    background-color: #6E5C81;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    height: 80%;
+    width: 40%;
+    border-radius: 100%;
+    transition: all .5s;
+    cursor: pointer;
+}
+.bc{
+    padding: 2%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+}
+.bcData{
+    width: 50vw;
+    align-items: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    margin-top: 9%;
+    border-radius: 10px;
+}
+.bcData h1{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-family: 'Poppins', 'Playfair Display', 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 60px;
+}
+.bcData p{
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    font-family: 'Lora', 'Roboto', 'Merriweather', serif;
+    letter-spacing: 1px;
+}
+.explorebtn{
+    padding: 12px 24px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 2px solid #F8F8F8;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.explorebtn.animate{
+    animation: fadeInUp 0.3s ease-in-out;
+}
+.explorebtn:hover{
+    background-color: #6E5C81;
+    transition: 0.2s ease-in-out;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    height: 70px;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(133, 133, 133, 0.175);
+    /* display: none; */
+}
+#nav, #links{
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    color: #ffffff;
+    margin: 0;
+    padding: 0; 
+}
+#nav li, #links li{
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+}
+#nav li{
+    display: flex;
+    height: 100%;
+    width: 150px;
+    border-radius: none;
+}
+#nav li:hover{    
+    background-color: rgba(255, 255, 255, 0.175);
+}
+#links{
+    margin-right: 30px;
+    gap: 20px;
+}
+#routeLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+.waIcon{
+    color: white;
+    transition: 0.2s;
+    &:hover{
+        /* color: #6e3c8281; */
+        color: #6E5C81;
+    }
+}
+
+.sidebarbtn{
+    z-index: 10;
+    display: none;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 5px;
+    color: #222;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.crossbtn{
+    font-family: sans-serif;
+    display: none;
+    cursor: pointer;
+}
+.crossbtn img{
+    width: 10%;
+}
+.navbc{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 100%;
+    transition: .05s all;
+}
+@media (max-width: 1000px) {
+    .bcData{
+        width: 65%;
+    }
+}
+@media (max-width: 700px) {
+    .navbar{
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 100%;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        justify-content:start;
+        align-items:start;
+        background-color: #222;
+        padding-top: 5%;
+        transition: .5s all;
+    }
+    #nav{
+        margin-top: 60px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        max-height: 230px;
+        justify-content: start;
+        align-items: start;
+        width: 250px;
+    }
+    #nav li{
+        width: 100%;
+        height: 80px;
+        text-align:left;
+        border-radius: 5px;
+    }
+    #links{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        height: auto;
+    }
+    .crossbtn{
+        position: absolute;
+        font-family: sans-serif;
+        display: block;
+        margin-top: -7px;
+        /* margin-left: 5px; */
+        width: 65%;
+        text-align: end;
+        font-size: 2.5rem;
+    }
+    .sidebarbtn{
+        display: block;
+        position: fixed;
+        left: 15px;
+        top: 15px;
+        font-size: 1.5rem;
+    }
+    .navbc{
+        display: block;
+    }
+}
+@media (max-width: 555px) {
+    .bc{
+        height: auto;
+    }
+    .bcData{
+        width: 85%;
+    }
+    .bcData h1{
+        font-size: 1.8rem;
+    }
+    .bcData p{
+        letter-spacing: 1.5px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    #nav{
+        width: 55%;
+    }
+
+}
+@media (max-width: 200px) {
+    .explorebtn{
+        width: 90%;
+        z-index: 3;
+    }
+    .bcData h1{
+        font-size: 1rem;
+    }
+}
