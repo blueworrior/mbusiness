@@ -46,11 +46,14 @@
     align-items: center;
     padding-bottom: 50px;
 }
-#contactbtn{
-    margin-top: 10px;
-    margin-bottom: 0px;
+.touch button{
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
 }
-#contactbtn button{
+.touch button a {
+    text-decoration: none;
     background-color: transparent;
     border: 2px solid #222;
     font-size: 1rem;
@@ -67,13 +70,8 @@
     color: #222;
     background: transparent;
     border-radius: 2px;
-    
+    transition: all .5s;
 }
-#contactbtn:hover button{
-    background-color: #6E5C81;
-    color: #ffff;
-}
-
 h5{
     font-family: serif;
     font-size: 1rem;

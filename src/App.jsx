@@ -10,6 +10,7 @@ import { BiBrightness } from 'react-icons/bi'
 
 function App() {
 
+  const [ hover, setHover ] = useState(false)
   const [ dm, setDm ] = useState(["#f5f0fa","#222","#555", "#f5f0fa", "45%"]);
   
   return (
@@ -19,13 +20,13 @@ function App() {
         <div className="bcimg" style={{ filter:`Brightness(${dm[4]})`}}></div>
         <Intro setDm={setDm} dm={dm} />
         <Routes>
-          <Route exact path='/' element={<Home dm={dm} />}/>
+          <Route exact path='/' element={<Home dm={dm} hover={hover} setHover={setHover}/>}/>
         </Routes>
         <Routes>
-          <Route exact path='/products' element={<ProductSec dm={dm}/>} />      
+          <Route exact path='/products' element={<ProductSec dm={dm} hover={hover} setHover={setHover}/>} />      
         </Routes>
         <Routes>
-          <Route exact path='/about' element={<About dm={dm} />} />      
+          <Route exact path='/about' element={<About dm={dm} hover={hover} setHover={setHover}/>} />      
         </Routes>
       </Preloader>
     </Router>

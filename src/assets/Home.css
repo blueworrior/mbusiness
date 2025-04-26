@@ -164,7 +164,7 @@
 }
 .homeAbout button{
     display: block;
-    width: 100px;
+    width: 120px;
     margin-top: 10px;
     padding: 10px;
     font: 1rem sans-serif;
@@ -177,11 +177,11 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
-.homeAbout button:hover{
+/* .homeAbout button:hover{
     background-color: #6E5C81;
     color: #ffff;
     
-}
+} */
 
 
 

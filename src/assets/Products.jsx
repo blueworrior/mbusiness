@@ -117,6 +117,8 @@ const Products = (props) => {
                         title={products.title}
                         image={products.img}
                         dm={props.dm}
+                        hover={props.hover}
+                        setHover={props.setHover}
                         />
                     )
                 })}

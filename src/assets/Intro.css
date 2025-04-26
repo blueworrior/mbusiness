@@ -19,6 +19,7 @@
     background-color: #f5f0fa;
     position: absolute;
     border-radius: 100px;
+    transition: all .5s;
 }
 .dbcircle{
     background-color: #6E5C81;
@@ -113,6 +114,7 @@
     padding: 0; 
 }
 #nav li, #links li{
+    transition: all .5s;
     justify-content: center;
     font-weight: bold;
     cursor: pointer;
@@ -142,10 +144,9 @@
 .waIcon{
     color: white;
     transition: 0.2s;
-    &:hover{
-        /* color: #6e3c8281; */
-        color: #6E5C81;
-    }
+}
+.waIcon:hover{
+    color: #6E5C81;
 }
 
 .sidebarbtn{

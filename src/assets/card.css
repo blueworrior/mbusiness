@@ -10,6 +10,7 @@
     aspect-ratio: 1;
     padding-bottom: 20px;
     padding-top: 20px;
+    align-content: center;
 }
 #cardtitle{
     margin: 30px;
@@ -24,26 +25,32 @@
     border-radius: 2px;
     height: auto;
 }
-#buybtn{
-    margin: 30px;
-}
+
 .card button{
-    display: block;
-    padding: 10px;
-    width: 120px;
-    font: 1rem sans-serif;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.buynow {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #222;
+    font-size: 1rem;
+    padding: 12px;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 110px;
+    display: block;
+    font: 1rem sans-serif;
     text-align: center;
     color: #222;
     background: transparent;
-    border: 2px solid #222;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-.card button:hover{
-    background: #6E5C81;
-    color: #fff;
+    transition: all .5s;
+    margin: 40px auto 0 auto; /* This is the key */
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -56,18 +63,20 @@
     #cardtitle{
         font-size: 1rem;
     }
-    .card button{
-        padding: 8%;
+    .buynow{
         width: 100px;
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
     .card img{
         width: 65%;
     }
+    .card button{
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 500px) {
     .card{
-        padding: 0;
+        padding: 0px;
     }
     #cardtitle{
         font-size: 1rem;
@@ -75,24 +84,35 @@
     .card img{
         width: 70%;
     }
+    .buynow{
+        margin-top: 25px;
+        width: 90px;
+        font-size: .75rem;
+        padding: 10px;
+    }
     .card button{
-        padding: 8%;
-        width: 100px;
-        font-size: .8rem;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 400px) {
-    
+    .card button{
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 300px) {
     #cardtitle{
         font-size: .9rem;
         font-weight: 600;
     }
+    .buynow{
+        width: 100%;
+        padding: 5px;
+        font-size: 0.65rem;
+    }
+    .card button{
+        padding: 0;
+        margin-bottom: 10px;
+    }
 }
 @media (max-width: 200px) {
-    .card button{
-        font-size: .6rem;
-        width: 120%;
-    }
 }

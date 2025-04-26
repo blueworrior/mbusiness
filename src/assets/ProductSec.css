@@ -40,25 +40,31 @@
     font-size: 17px;
     font-weight: 100;
 }
-#contactbtn{
-    margin-top: 10px;
-    margin-bottom: 100px;
+.prod button{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
-#ctbtn{
+.prod button a{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #222;
+    font-size: 1rem;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
     width: 130px;
+    display: block;
+    padding: 15px;
     font: 1rem sans-serif;
     font-weight: bold;
-    text-align: center;
+    text-align:center;
     color: #222;
     background: transparent;
-    border: 2px solid #222;
     border-radius: 2px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-#contactbtn:hover{
-    background-color: #6E5C81;
-    color: #fff;
+    transition: all .5s;
 }
 @media (max-width: 1000px) {
     .prod h1{
